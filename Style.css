@@ -1,0 +1,420 @@
+/* Lagos State Theme Colors */
+:root {
+  --green: #8cc354;
+  /* Mantis */
+  --blue: #0772ba;
+  /* Lochmara */
+  --white: #ffffff;
+  --black: #000000;
+  --grey: #f2f2f2;
+  --hover-bg: #e8f5e9;
+  /* A subtle greenish background for hover */
+}
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding-top: 80px;
+  font-family: Arial, sans-serif;
+  /* offset for fixed header */
+}
+
+input,
+textarea,
+button {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  overflow: hidden;
+}
+.slide-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 00.5s ease-out, transform 00.5s ease-out;
+}
+
+.slide-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.typing-effect {
+  font-size: 24px;
+  font-family: Arial;
+  border-right: 2px solid #000; /* Cursor effect */
+  animation: typing 4s steps(40, end), blink-caret 00.75s step-end infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0; /* Initial width */
+  animation-fill-mode: forwards; /* Keep the final state */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%; /* Final width */
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000;
+  }
+}
+
+header {
+  background: var(--white);
+  border-bottom: 1px solid #ccc;
+  position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #EFF5F1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--green);
+  
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  
+}
+li a {padding: px;
+  margin:0px;
+}
+nav a {
+  text-decoration: none;
+  color: var(--black);
+  padding-top: 0px;
+}
+
+.section {margin-top:0px;
+  padding: 3rem 0;
+}
+
+.grey {
+  background: #509C79;
+}
+
+.center {
+  text-align: center;
+}
+
+.split {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.text {
+  flex: 1;
+  max-width: 600px;
+  padding-left: 5%;
+  color:white;
+  
+}
+.sec1 {
+  width: 100%; 
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  
+}
+#lgproj {background-image:url('img/lgproj.jpg');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.overlay
+{width: 100%;
+height:100%;
+background-color: #00f0e22a;
+padding:0px;
+position: ;
+z-index: ;
+overflow: hidden;
+}
+
+.image.placeholder{
+
+  flex: 1;
+  min-width: 370px;
+  background: #0E4833;
+  height: 400px;
+  margin-right:5%;
+  box-shadow:0px 0px 20px #00800275;
+}
+.image.placeholder.dl{
+  flex: ;
+  max-width: 500px;
+  background: #ccc;
+  height: 600px;
+  overflow: hidden;
+  margin-left: 5%;
+  
+}
+
+.btn,
+.btn-outline {
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 4px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.btn {
+  background: #0B52AE;
+  color: var(--white);
+  border: none;
+}
+.btn.gm {
+  text-align: center; font-weight: normal;
+  padding: 5px 30px;
+}
+
+.btn-outline {
+  border: 2px solid white;
+  color: white;
+  background: transparent;
+}
+
+.btn-outline-sm {
+  border: 1px solid var(--green);
+  color: var(--green);
+  background: transparent;
+}
+
+.quiz-buttons .btn-sm {
+  margin: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  background: var(--blue);
+  color: white;
+  font-size: 0.8rem;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.brt-section {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.appreciation-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding-bottom: 20px;
+  overflow: scroll;
+  
+}
+
+.appreciation-item {
+  text-align: center;
+  flex: 1;
+  
+}
+
+.circle.placeholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #ccc;
+  margin: auto;
+}
+
+.btn-outline-sm {
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--green);
+  color: var(--green);
+  background: transparent;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.contact {background-color: #0E4833; color:white}
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.6rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  width: 100%;
+}
+.contact-form{
+  width: 100%;
+  max-width: 250px;
+}
+
+footer {
+  color: var(--white);
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+.footer-links a {
+  color: var(--white);
+}
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 0.3rem 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.small {
+  font-size: 0.9rem;
+}
+
+.tiny {
+  font-size: 0.8rem;
+  color: #555;
+}
+/* Add at the bottom of styles.css */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: var(--blue);
+  border-radius: 5px;
+}
+.logo img {
+  max-height: 50px;
+  width: auto;
+}
+
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  margin: 0px;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: var(--hover-bg);
+  color: var(--green);
+}
+
+nav ul li a.active {
+  background: var(--blue);
+  color: var(--white);
+}
+
+/* Mobile View**/
+@media (max-width: 768px) {
+  .header-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+.dl {max-height:700px}
+  nav {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  nav ul li {
+    text-align: left;
+  }
+  .logo img {
+    max-height: 40px;
+  }
+}
+.lg  {font-size: 40px;
+padding-top:40px;
+padding-bottom: 20px;}
+.tx {padding-bottom: 20px;}
+.dl {margin-top: 40px;
+  max-height: 500px;
+  overflow: hidden;
+  color:#0E4833;
+  background-color: #EFF5F1;
+
+}
+.image.placeholder.dl {height:470px;
+  background-color: white;
+}
+.brt {padding-top: 100px;
+  
+}
+.quiz-section {padding-left: 5%;
+  width: 400px;
+}
+.expl {padding:10px 10%}
+}
